@@ -3,3 +3,8 @@ C:\Users\Matt\Documents\Visual Studio 2012\Projects\WAPD_UE1\WAPD_UE1\bin\WAPD_U
 C:\Users\Matt\Documents\Visual Studio 2012\Projects\WAPD_UE1\WAPD_UE1\obj\Debug\WAPD_Uebungen.csprojResolveAssemblyReference.cache
 C:\Users\Matt\Documents\Visual Studio 2012\Projects\WAPD_UE1\WAPD_UE1\obj\Debug\WAPD_UE1.dll
 C:\Users\Matt\Documents\Visual Studio 2012\Projects\WAPD_UE1\WAPD_UE1\obj\Debug\WAPD_UE1.pdb
+C:\Users\Matt\Documents\GitHub\WAPD\WAPD_UE1\bin\WAPD_UE1.dll
+C:\Users\Matt\Documents\GitHub\WAPD\WAPD_UE1\bin\WAPD_UE1.pdb
+C:\Users\Matt\Documents\GitHub\WAPD\WAPD_UE1\obj\Debug\WAPD_Uebungen.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\WAPD\WAPD_UE1\obj\Debug\WAPD_UE1.dll
+C:\Users\Matt\Documents\GitHub\WAPD\WAPD_UE1\obj\Debug\WAPD_UE1.pdb

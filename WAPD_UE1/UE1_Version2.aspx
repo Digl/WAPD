@@ -10,6 +10,17 @@
     <title></title>
 </head>
 <body>
+    <div id="navcontainer">
+        <ul id="navlist">
+            <li><a href="UE1_Version1.aspx">&nbsp;&nbsp;&Uuml;bung 1 - Version 1&nbsp;&nbsp;</a></li>
+            <li><a href="UE1_Version2.aspx">&nbsp;&nbsp;&Uuml;bung 1 - Version 2&nbsp;&nbsp;</a></li>
+            <li id="active"><a id="current" href="UE1_Version2.aspx">&nbsp;&nbsp;&Uuml;bung 2&nbsp;&nbsp;</a></li>
+            <li><a href="UE3.aspx">&nbsp;&nbsp;&Uuml;bung 3&nbsp;&nbsp;</a></li>
+            <li><a href="#">&nbsp;&nbsp;&Uuml;bung 4&nbsp;&nbsp;</a></li>
+        </ul>
+    </div>
+    <div style="clear:both;"></div>
+    <br />
     <div id="wrapper" style="margin:40px;">
         <h1>Kontakt-Formular v.2</h1>
         <div runat="server" id="info_v2">Kontaktieren Sie uns &uuml;ber unser Kontaktformular:</div>

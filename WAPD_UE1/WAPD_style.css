@@ -8,10 +8,36 @@
     background-color:lightcoral;
     border: 1px solid black;
     table-layout:fixed;
-    width: 400px;
+    width: 336px;
     text-align:center;
     line-height: 22px;
+    display: none;
+    /*visibility:visible !important;*/
+    padding: 20px;
 }
+
+#successMessage, #successMessage2 {
+    background-color: lightgreen;
+    width: 407px;
+    margin-top: -60px;
+    margin-left: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 20px;
+    text-align: center;
+    display: none;
+}
+
+#successMessage2 {
+    width: 700px;
+    display: block !important;
+}
+
+#errorCheck, #ValidationSummary1, #mailCheck, #regexEmailValid, #cusCustom, .errorMessage {
+    /*display: block !important;
+    visibility:visible !important;*/
+}
+
 
 #ValidationSummary1{
     text-align:left;
@@ -65,6 +91,14 @@
     float: right;
 }
 
-#Button2 {
+#Button2, #goToStep3Button, #newButton, #goToStep4 {
     margin-left: 560px;
+}
+
+#Button1, #goBackToStep2Button, #goBackToStep2 {
+    margin-left: 20px;
+}
+
+#checkTable, #checkTable2, #Calendar1 {
+    margin: 20px;
 }

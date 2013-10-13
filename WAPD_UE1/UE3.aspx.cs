@@ -11,6 +11,7 @@ namespace WAPD_UE1
 {
     public partial class UE3 : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
             this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
@@ -27,8 +28,21 @@ namespace WAPD_UE1
 
         protected void goToStep2(object sender, EventArgs e)
         {
-            string selectedProduct = product.SelectedItem.Text;
-            productToBuy.Text = selectedProduct;
+            //MultiView1.ActiveViewIndex = 1;
+            Page.Validate();
+            if (!Page.IsValid)
+            {
+                goToStep3Button.Enabled = false;
+            }
+            else
+            {
+                goToStep3Button.Enabled = true;
+            }
+        }
+
+        protected void goToView3(object sender, EventArgs e)
+        {
+            productToBuy.Text = product.SelectedItem.Text;
             deliveryDate.Text = Calendar1.SelectedDate.ToString("dd.MMMM.yyyy") + " (" + showExpress.InnerHtml + ")";
             FirstnameVal.Text = Firstname.Text;
             LastnameVal.Text = Lastname.Text;
@@ -37,6 +51,9 @@ namespace WAPD_UE1
             PLZVal.Text = PLZ.Text;
             CityVal.Text = City.Text;
             MailVal.Text = Mail.Text;
+
+            
+
         }
 
         protected void Calendar1_DayRender(object sender, System.Web.UI.WebControls.DayRenderEventArgs e)
@@ -64,8 +81,29 @@ namespace WAPD_UE1
             if (Calendar1.SelectedDate < Today.AddDays(2))
                 showExpress.InnerHtml = "Expressliefeung";
             else
-                showExpress.InnerHtml = "keine Expresslieferung";
+                showExpress.InnerHtml = "Normale Lieferung";
 
         }
+        
+        
+        
+
+        protected void goToStep4_Click(object sender, EventArgs e)
+        {
+            successMessage2.InnerHtml += Street.Text + " " + HouseNumber.Text + ", " + PLZ.Text + " " + City.Text;
+        }
+
+        protected void checkCalendar(object source, ServerValidateEventArgs args)
+        {
+            if (Calendar1.SelectedDate == null || Calendar1.SelectedDate == new DateTime(0001, 1, 1, 0, 0, 0))
+            {
+                args.IsValid = false;
+            }
+            else
+            {
+                args.IsValid = true;
+            }
+        }
+
     }
 }
